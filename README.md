@@ -2,7 +2,7 @@
 
 ## Demonstração
 
-![Lista de residências versão desktop](./src/assets/houses.png)
+![Lista de residências versão desktop](./src/assets/houses-desktop.png)
 ![Lista de residências versão mobile](./src/assets/houses.png)
 ![Detalhes da residência](./src/assets/details.png)
 
