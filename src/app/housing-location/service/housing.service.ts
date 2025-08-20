@@ -6,7 +6,7 @@ import { HousingLocationInterface } from '../interface/housing.interface';
 })
 
 export class HousingService {
-  url = "http://localhost:3000/locations"; //instalar o dotenv
+  url = "http://localhost:3000/locations";
 
   async getAllHousingLocations(): Promise<HousingLocationInterface[]> {
     const dadosCasas = await fetch(this.url);
