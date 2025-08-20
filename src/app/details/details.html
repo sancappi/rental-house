@@ -1,0 +1,47 @@
+<article class=" flex justify-center">
+    <div class="m-2 rounded grid-rows-5 gap-2 max-w-[500px]">
+        <div class="row-span-2 object-contain h-70 mb-2">
+            <img class="w-full h-full  rounded-md"
+            [src]="housingLocation?.photo" alt="Exterior photo of {{housingLocation?.name}}"
+            crossorigin/>
+        </div>
+        <section class="row-span-1 bg-gray-100">
+            <h2 class="text-xl mt-4">{{housingLocation?.name}}</h2>
+            <div class="flex items-center">
+                <svg class="text-gray-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" fill="currentColor"/></svg>
+                <p class="">{{housingLocation?.city}}, {{housingLocation?.state}}</p>
+            </div>
+        </section>
+
+        <section class="row-span-1 mt-4 sm:text-md">
+            <h2 class="font-bold">About this housing location</h2>
+            <ul class="ml-8 list-disc ">
+                <li>Units available: {{ housingLocation?.availableUnits }}</li>
+                <li>Does this location have wifi: {{ housingLocation?.wifi }}</li>
+                <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
+            </ul>
+        </section>
+
+        <section class="row-span-1 pb-10 mt-4 bg-gray-100 flex flex-col justify-center items-center">
+            <h2 class="font-bold p-3 mt-4">Apply now to live here</h2>
+            <form [formGroup]="applyForm" (submit)="submitApplication()" class="mt-6 flex flex-col items-center gap-2 w-[96%] ">
+                <div class="w-full flex gap-2 justify-between">
+                    <label for="first-name" class="">First Name</label>
+                    <input id="first-name" type="text" formControlName="firstName" class="w-[60%] bg-white border-2 border-gray-400 rounded p-1 outline-none focus:ring-1 focus:ring-gray-500"/>
+                </div>
+                <div class="w-full flex gap-2 justify-between">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" type="text" formControlName="lastName" class="w-[60%] bg-white border-2 border-gray-400 rounded p-1 outline-none focus:ring-1 focus:ring-gray-500"/>
+                </div>
+                <div class=" w-full flex gap-2 justify-between">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" formControlName="email" class="w-[60%] bg-white border-2 border-gray-400 rounded p-1 outline-none focus:ring-1 focus:ring-gray-500"/>
+                </div>          
+                <button type="submit" class="bg-purple-400 text-purple-200 p-3 rounded mt-4 w-30 cursor-pointer">Apply now</button>
+            </form>
+        </section>
+    </div>
+</article>
+
+
+
