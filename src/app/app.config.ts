@@ -1,4 +1,4 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners,
+/*import { ApplicationConfig, provideBrowserGlobalErrorListeners,
   provideZoneChangeDetection } from '@angular/core';
 
 export const appConfig: ApplicationConfig = {
@@ -7,3 +7,4 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
   ]
 };
+*/

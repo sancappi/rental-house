@@ -1,23 +1,23 @@
 # Rental house
 
-## Demonstração
+## 🎨 Demonstração
 
 ![Lista de residências versão desktop](./src/assets/houses-desktop.png)
 ![Lista de residências versão mobile](./src/assets/houses.png)
 ![Detalhes da residência](./src/assets/details.png)
 
-## Tecnologias utilizadas
+## ✅ Tecnologias utilizadas
 
-- ⚙️ Angular
-- ⚙️ Tailwind CSS
+- Angular
+- Tailwind CSS
 
-## Como rodar o projeto
+## ▶️ Como rodar o projeto
 
 ### Pré-requisitos
 
 - Node.js
 - npm ou yarn
-- Angular CLI (recomendo)  
+- Angular CLI (recomendo) 
 
 ### Instalar as dependências 
 
